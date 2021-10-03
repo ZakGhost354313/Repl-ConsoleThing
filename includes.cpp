@@ -3,6 +3,12 @@
 #include <string>
 #include <cmath>
 
+//idk
+std::string type;
+std::string user;
+std::string pass;
+
+
 //obviously gets secrets
 void getSecrets() {
   char* ZakU = getenv("ZakU");
@@ -10,7 +16,8 @@ void getSecrets() {
 }
 
 //checks if user and pass are correct
-bool checkLogin(user, pass) {
+bool checkLogin(user, pass){
+  getSecrets()
   if (user == ZakU) {
     if (pass == ZakP) {
       return true;
@@ -34,9 +41,9 @@ bool checkLogin(user, pass) {
 
 //error function, for easy error logging
 void error(type) {
-  if (type == 'login') {
-    std::cout << 'Login Error\n Get Help\n';
-  }else if (type == 'error') {
-    std::cout << 'Error\n Get Help\n';
+  if (type == "login") {
+    std::cout << "Login Error\n Get Help\n";
+  }else if (type == "error") {
+    std::cout << "Error\n Get Help\n";
   }
 }

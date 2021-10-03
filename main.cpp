@@ -18,6 +18,6 @@ int main() {
   } else if (login == false) {
     std::cout << "Login unsuccessful\n";
   } else {
-    error('login');
+    error("login");
   }
 }
