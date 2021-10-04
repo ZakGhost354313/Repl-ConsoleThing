@@ -47,3 +47,9 @@ void error(type) {
     std::cout << "Error\n Get Help\n";
   }
 }
+
+string title =  ""
+
+void title() {
+  std::cout << ""
+}
